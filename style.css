@@ -1,20 +1,21 @@
 body {
     background-color: black;
 }
-
 .navbar {
     color: aliceblue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 5px 5px 5px;
+    padding: 0px 0px 5px 5px;
 }
 
 .paragraphs {
     display: flex;
     flex-direction: row;
     gap: 10px;
+
+    cursor: pointer;
 
 }
 
@@ -26,5 +27,74 @@ button {
     color: white;
     border: 2px;
     border-color: black;
+    cursor: pointer;
 
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line1,
+.line2,
+.line3 {
+    color: aliceblue;
+
+}
+.line1{
+    width: 300px;
+    height: 25px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(206, 204, 204);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1;
+}
+.line2{
+    font-size: 64px;
+    line-height: 1;
+}
+.line3{
+    color: rgb(147, 147, 147);
+}
+.start{
+    background-color: rgb(26, 139, 225);
+    color: aliceblue;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(20, 99, 195);
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+.view{
+    background-color: black;
+    color: aliceblue;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(206, 204, 204);
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.95);
+}
+
+.view:active{
+    transform:scale(0.95) ;
+}
+.start:active{
+    transform: scale(0.95);
 }
